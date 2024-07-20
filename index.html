@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #postHolder, #commHolder {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="idSearch">Find id (from 1 to 100)</label>
+    <input
+      type="text"
+      id="idSearch"
+      name="idSearch"
+      required
+      minlength="1"
+      maxlength="3"
+    />
+    <button id="findBtn">Найти</button>
+    <button id="clearBtn">Очистить</button>
+    <div id="postHolder">
+      <h2></h2>
+      <p></p>
+      <button id="commBtn">Show comments</button>
+    </div>
+    <div id="commHolder">
+
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
